@@ -1,0 +1,62 @@
+\documentclass[]{article}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\author{Marcin Tomczyk}
+\date{23.10.2018}
+\begin{document}
+\indent %wstawia odstęp poziomy równy wcięciu na %początku akapitu
+
+
+Test
+\noindent
+\begin{center}
+Test2			%wyśrodkowany napis
+\end{center}
+ 
+\begin{enumerate}
+\item wyliczenie 1
+\item wyliczenie 2
+\end{enumerate}
+%komentarz
+%tworzymy spis tresci
+\tableofcontents
+
+
+
+\section{sekcja1}
+\blindtext %sluzy do przejrzenia losowego tekstu
+\begin{tabular}{||c|r||} \hline		%tworzymy tabele
+\multicolumn{2}{||c||}{Moj pierwszy wiersz}
+\\ \hline \hline
+(1,1) & (1,2) \\
+(2,1) & (2,2) \\ \hline
+(3,1) & (3,2) \\
+(4,1) & (4,2) \\ \hline
+\end{tabular}
+
+\footnotemark %tzw "odsylacz"
+\section{sekcja2}
+\blindtext
+
+\section{sekcja3}
+\blindtext
+
+\footnote[1]{to jest przypis}
+\section{sekcja4}
+\blindtext
+
+\begin{thebibliography}{9}
+\bibitem {} Mikolaj Kopernik. 
+\textit{O obrotach cial niebieskich}. 
+ Torun, 1530.
+ 
+ \bibitem {} J.R.R.Tolkien. 
+\textit{Hobbit}. 
+ Londyn, 1947.
+
+
+\end{thebibliography}
+
+
+
+\end{document}
